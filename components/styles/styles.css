@@ -1,6 +1,7 @@
 .container{
 	display: block;	
 	width: 100%;
+	background-color: aqua;
 }
 
 img{
