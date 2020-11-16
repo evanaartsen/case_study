@@ -1,83 +1,46 @@
-
-	*,
-	*:before,
-	*:after {
-	  box-sizing: border-box;
-	}
-
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif; /*to simulate unavailable font*/
 	background-color: #fff;	
 }
-
 .parts{
-	background-color: #fff;	
-	width: 90%;
+	width: 98%;
 	margin: 0 auto;
 }
-
 img{
 	display: block;	
 	width: 100%;
 }
-
-.nav{
-
-}
-
 a{
 	text-decoration: none;
 	color: #999;
-
 }
-
 nav ul {
 	list-style-type: none;
 	text-transform: uppercase;
-  }
-
-
-
-  .outer-container{
-	background-color:#fff;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	}
-	
-	.flex-container {
-	  display: inline-flex;
-	  
-	  /* This is the same as:
-	   * flex-direction: row;
-	   * flex-wrap: wrap;
-	   */
-	  flex-flow: row wrap;
-	  
-	  /* This is how it's distributed in the remaining space */
-	  justify-content: space-around;
-	  
-	  padding: 0;
-	  margin: 0;
-	  list-style: none;
-	}
-	
-	.flex-item {
-	  color: #999;
-	  font-size: .6em;
-	}
-		
-	h1 a{
-		font-size: .6em;
-	}
-
-
-
-
-
-
-
+}
+.outer-container{
+max-width: 1200px;
+margin: 0 auto;
+padding-top: 10px;
+padding-bottom: 80px;
+}
+.flex-container {
+	display: inline-flex;
+	flex-flow: row wrap;
+	justify-content: space-around;	  
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.flex-item {
+	color: #999;
+	font-size: .6em;
+}	
 
 .nav-bar{
 display: inline-flex;
@@ -86,8 +49,8 @@ width: 100%;
 .nav-bar__item a{
 list-style: none; 
 font-size: .7em;
-flex-basis: 150px; 
-padding:10px;
+flex-basis: 200px; 
+padding:5px;
 align-items: center;
 text-transform: uppercase;
 }
@@ -96,33 +59,29 @@ color: var(--gray-dark);
 text-decoration: none;	
 }
 .active a{
-color: var(--orange);
+color: #f5856f;
 }
-
-
+.logo{
+	width: 30%;
+	font-size: .1.75rem;
+}
 /*FOOTER*/ 
-
 .footer-nav-bar{
 display: inline-flex;
-width: 20%;
-margin: 0;
-padding:5px, 5px, 5px, 10px;
+width: 100%;
 }
-
 .footer-nav-bar__item {
 list-style: none; 
-font-size:1.5em;
-flex-basis: 40px; 
+font-size:1.25em;
+padding-right: 5px;
 }
-
-#facebook-icon{
-	color: #0079e1;
+#facebook-icon {
+color: #0079e1;
 }
-
 #twitter-icon{
-	color: #18a4ef;
+color: #18a4ef;
+}
+#instagram-icon{
+color: #eb006b;
 }
 
-#instagram-icon{
-	color: #eb006b;
-}
