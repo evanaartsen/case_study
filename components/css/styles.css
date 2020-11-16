@@ -1,13 +1,30 @@
-.container{
-	display: block;	
-	width: 100%;
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #fff;	
+}
+
+.parts{
+	background-color: #fff;	
+	width: 90%;
+	margin: 0 auto;
 }
 
 img{
 	display: block;	
-	width: 100%;;
-}
-
-.code{
+	width: 90%;
+	margin: auto;
 	background-color: rgb(222, 243, 243);
 }
+
+.nav{
+text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+	color: #999;
+}
+
+nav ul {
+	list-style-type: none;
+  }

@@ -5,10 +5,63 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <meta charset="utf-8">
 
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+	<link href="css/normalize.css" rel="stylesheet" />	
+	<script src="https://kit.fontawesome.com/a1e57ac401.js" crossorigin="anonymous"></script>
+    <style>
+
+        .outer-container{
+        background-color:#fff;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        }
+        
+        .flex-container {
+          display: flex;
+          
+          /* This is the same as:
+           * flex-direction: row;
+           * flex-wrap: wrap;
+           */
+          flex-flow: row wrap;
+          
+          /* This is how it's distributed in the remaining space */
+          justify-content: space-around;
+          
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+        
+        .flex-item {
+          background: tomato;
+          padding: 5px;
+          width: 200px;
+          height: 150px;
+          margin-top: 10px;
+          line-height: 150px;
+          color: white;
+          font-weight: bold;
+          font-size: 3em;
+          text-align: center;
+        }
+            
+        </style>
+        
 </head>
 
-<body>
 
+
+<body">
+
+<div class="outer-container">
+
+    <div class="parts">
 <h1>Components</h1>
 
 <div class="defaults">
@@ -20,7 +73,10 @@
 
 </div>
 
-<div class="section">
+<div class="">
+
+<h2>Header and Navigation:</h2> 
+<hr>  
 
 <img src="img/nav.jpg" alt="image">
 <hr>
@@ -30,6 +86,8 @@
 
 <div class="code">
 
+    <h2>Code:</h2>      
+    <hr>
 <!-- start header -->
 
 <header>			
@@ -41,30 +99,31 @@
 <!-- start site-navigation -->
 
 <nav>
-<button>Menu</button>
-<div>
+
+<div class="nav,flex-container">
+
 <ul >
-<li>
+<li flex-item >
 <a href="#">Home</a>
 </li>
 
-<li>
+<li flex-item >
 <a href="#">The Octopus&#8217;s Holiday</a>
     <ul>
-        <li><a href="#">Special Features</a></li>
+        <li ><a href="#">Special Features</a></li>
     </ul>
 </li>
 
-<li>
+<li flex-item >
 <a href="#">The Octopus Series</a>
 </li>
 
 
-<li>
+<li flex-item >
 <a href="#">About the Author</a>
 </li>
 
-<li>
+<li flex-item >
 <a href="https://paulpycraft.com/contact/">Contact</a>
 </li>
 
@@ -75,7 +134,7 @@
 </div>
 <!-- end site-navigation -->
 
-
-
+</div>
+</div>
 </body>
 </html>
