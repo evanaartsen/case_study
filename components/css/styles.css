@@ -64,3 +64,143 @@ nav ul {
 	h1 a{
 		font-size: .6em;
 	}
+
+
+
+
+
+
+
+
+
+	*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  --orange: #eb8470;
+  --gray-dark: #444343;
+  --gray: #8a8a8a;
+  --gray-light: #f9f9f9;
+  --font-sans-serif: "Lato", sans-serif;
+  --font-serif: "Lora", serif;
+  --font-cursive: "Caveat", cursive;
+}
+body {
+font-family: var(--font-sans-serif);
+}  	  
+img{
+	width: 100%;
+}
+h2,h4{
+font-family: var(--font-cursive);	
+}
+h2{
+text-align: center;
+}
+li{
+list-style: none;
+}
+p{
+  color: var(--gray);
+}
+
+/*HEADER*/
+ 
+header{
+background-color: var(--gray-light);	
+}
+.logo{
+width: 100%;
+color: green;
+}
+.logo a{
+
+font-family: var(--font-cursive);	
+text-transform: capitalize;
+font-size: .9rem;
+font-weight: bold;	
+}
+.nav-bar{
+display: inline-flex;
+width: 100%;
+}
+.nav-bar__item a{
+list-style: none; 
+font-size: .7em;
+flex-basis: 150px; 
+padding:10px;
+align-items: center;
+text-transform: uppercase;
+}
+a:link{
+color: var(--gray-dark);
+text-decoration: none;	
+}
+.active a{
+border-bottom: 0.25rem solid var(--orange);
+color: var(--orange);
+}
+
+
+/*ART*/
+
+.categories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+
+}
+
+.category{
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  color: #8a8a8a;;
+  font-weight: 100;
+}
+
+.art-category{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.about{
+	display: block;
+	width:80%;
+	margin 0 auto;
+	text-align: left;
+	  background-color: rgba(255, 255, 255, 0.5);
+	}
+/*FOOTER*/ 
+
+footer{
+background-color: var(--gray);
+padding:5px;
+}
+.footer-nav-bar{
+display: inline-flex;
+width: 100%;
+color: white;
+margin: 0;
+padding:5px, 5px, 5px, 15px;
+}
+.copyright{
+font-family: var(--font-cursive);
+text-transform: capitalize;
+font-size: .75rem;
+width: 100%;
+}
+.footer-nav-bar__item {
+list-style: none; 
+font-size:.75em;
+flex-basis: 50px; 
+}
+.footer-nav-bar__item a{
+ color: var(--orange);
+}
